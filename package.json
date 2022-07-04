@@ -1,0 +1,11 @@
+{
+  "name": "code-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/my-first-gitHub-account123/code-demo.git",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.5.5",
+    "ts-node": "^10.8.2"
+  }
+}
