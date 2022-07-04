@@ -30,17 +30,17 @@ export class Emiter<Topic extends string | number | symbol> {
     });
   }
 }
-enum Topics {
+export enum Topics {
   A,
   B,
   C,
 }
-const emiter = new Emiter<Topics>();
-emiter.on(Topics.A).subscribe((data) => {
-  console.log(data);
-});
-emiter.emit(Topics.A, "hahaha");
-setTimeout(() => {
-  emiter.emit(Topics.A, "1 s later hahaha");
-}, 1000);
+// const emiter = new Emiter<Topics>();
+// emiter.on(Topics.A).subscribe((data) => {
+//   console.log(data);
+// });
+// emiter.emit(Topics.A, "hahaha");
+// setTimeout(() => {
+//   emiter.emit(Topics.A, "1 s later hahaha");
+// }, 1000);
 export default Emiter;
